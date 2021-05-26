@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Simple navigation menu</title>
+		
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Antonio:wght@500&display=swap" rel="stylesheet">
+		<style>
+			*{
+				padding: 0; margin: 0;
+				box-sizing: border-box;
+				font-family: 'Antonio', sans-serif;
+			}
+			
+			.wrapper{
+				width: 100%;
+				margin: 0px auto;
+			}
+			
+			nav{
+				background: #000;
+				display: flex;
+				justify-content: space-between;
+			}
+			ul{
+				list-style-type: none;
+				display: flex;
+				padding: 0px;
+			}
+			a{
+				text-decoration: none;
+				color: white;
+				display: block;
+				padding: 10px;
+				text-align: center;
+			}
+
+			a.left{
+				padding-left: 20px;
+				padding-right: 20px;
+				letter-spacing: 2px;
+			}
+			a:hover{
+				background: #555;
+			}
+			a.fb{
+				background: url(images/fb.png) no-repeat center;
+				background-size: 30px;
+			}
+			a.ins{
+				background: url(images/ins.png) no-repeat center;
+				background-size: 50px;
+			}
+			.social a{
+				text-indent: -10000px;
+			}
+			ul.social{
+				max-width: 90px;
+				flex: 1;
+				display: flex;
+			}
+			
+			ul.social li {
+				flex: 1;
+			}
+			ul.social li:hover {
+				background: #555;
+			}
+            
+            /* styling text content */
+          
+            section.container{
+				margin: 20px;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+			}
+            article{
+                margin-bottom: 20px;
+                background: #e5e7e9;
+                padding: 20px; 
+                text-align: justify;
+                flex: 0 1 32%;
+            }
+            h2{
+                text-align: center;
+                margin-bottom: 20px;
+            }
+            div.switch{
+                margin: 20px;
+            }
+            .switch > *{
+            	color: black;
+            	display: inline-block;
+            }
+            .switch a:hover{
+            	background: #e5e7e9;
+            }
+
+            /*switch layout*/
+            .stack{
+            	display: 0 1 100%;
+            }
+
+
+
+/*	media query for responsive website	*/
+			@media(max-width: 768px){
+				nav{
+				display: block;
+			}
+			ul{
+				display: block
+			}
+			ul.social{
+				margin: 0 auto;
+			}
+			
+            section.container{
+                display: block;
+                }
+                
+			}
+			}
+		</style>
+	</head>
+	<body>
+		<div class="wrapper">
+			
+			<nav>
+				<ul>
+					<li><a href="" class="left" class="link">Home</a></li>
+					<li><a href="" class="left" class="link">Store</a></li>
+					<li><a href="" class="left" class="link">About</a></li>
+					<li><a href="" class="left" class="link">Contact</a></li>
+				</ul>
+				<ul class="social">
+					<li><a href="" class="fb">facebook</a></li>
+					<li><a href="" class="ins">instagram</a></li>
+				</ul>
+			</nav>
+		</div>
+		
+		<div class="switch">
+			<span>Layout:</span>	
+			<a href="#" id="myDIV" onclick="myFunction()">Stack</a>
+			<a href="#" class="grid">Grid</a>
+		</div>
+		
+
+
+		<section class="container">
+			<article>
+				<h2>What is Lorem Ipsum?</h2>
+				<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+			</article>
+			<article>
+				<h2>Why do we use it?</h2>
+				<p>
+				It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+			</article>
+			<article>
+				<h2>What is Lorem Ipsum?</h2>
+				<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+			</article>
+			<article>
+				<h2>Why do we use it?</h2>
+				<p>
+				It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+			</article>
+			<article>
+				<h2>What is Lorem Ipsum?</h2>
+				<p>
+				Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
+			</article>
+			<article>
+				<h2>Why do we use it?</h2>
+				<p>
+				It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using 'Content here, content here', making it look like readable English.</p>
+			</article>	
+		</section>
+
+		
+	</body>
+</html>
